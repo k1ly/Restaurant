@@ -1,0 +1,31 @@
+@import "bootstrap/scss/functions"
+@import "bootstrap/scss/variables"
+@import "bootstrap/scss/maps"
+@import "bootstrap/scss/mixins"
+@import "bootstrap/scss/utilities"
+@import "bootstrap/scss/utilities/api"
+
+.table-list-wrap
+  @extend .d-flex
+  @extend .flex-column
+  @extend .flex-fill
+  @extend .pt-3
+  background-color: rgba(0, 0, 0, 0.5)
+
+.restaurant-scene
+  height: 400px
+
+.notification
+  @extend .position-fixed
+  z-index: 9999
+  right: 40px
+  bottom: 50px
+
+.alert
+  @extend .d-flex
+  @extend .justify-content-center
+  @extend .position-fixed
+  @extend .w-100
+  z-index: 9999
+  top: 50px
+  left: 0

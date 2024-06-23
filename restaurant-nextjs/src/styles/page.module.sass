@@ -1,0 +1,142 @@
+@import "bootstrap/scss/functions"
+@import "bootstrap/scss/variables"
+@import "bootstrap/scss/maps"
+@import "bootstrap/scss/mixins"
+@import "bootstrap/scss/utilities"
+@import "bootstrap/scss/utilities/api"
+
+.page-container
+  @extend .d-flex
+  @extend .flex-column
+  @extend .flex-fill
+  background-image: url(/img/background.jpg)
+  background-attachment: fixed
+  background-position: center center
+  background-size: cover
+
+.header-container
+  @extend .d-flex
+  @extend .justify-content-center
+  @extend .position-fixed
+  @extend .w-100
+  z-index: 10
+  background-color: rgb(32, 30, 40)
+  transition: background-color 0.5s ease-in-out
+
+  &.scrolled
+    background-color: rgba(32, 30, 40, 0.75)
+
+.header
+  @extend .d-flex
+  @extend .justify-content-between
+  @extend .align-items-center
+  width: 70%
+
+.header-nav-bar
+  @extend .d-flex
+  @extend .justify-content-between
+  @extend .align-items-center
+  width: 45%
+
+.header-actions
+  @extend .d-flex
+  @extend .justify-content-evenly
+  @extend .align-items-center
+  @extend .float-end
+  width: 25%
+
+.nav-bar-link
+  @extend .fw-bold
+  color: white
+  text-decoration: none
+
+  &:hover
+    color: rgb(110, 210, 202)
+
+.logo
+  @extend .fs-1
+  color: white
+  font-family: Brush Script MT, cursive
+  text-decoration: none
+
+  &:hover
+    color: rgb(118, 142, 213)
+
+.cart
+  @extend .rounded-circle
+  width: 35px
+  height: 35px
+  outline: 0 solid aliceblue
+  transition: outline-offset 0.2s ease
+  cursor: pointer
+
+  &:hover
+    outline-width: 3px
+    outline-offset: 5px
+    background-color: rgba(100, 84, 255, 0.2)
+
+.guest-actions
+  @extend .d-flex
+  @extend .justify-content-around
+  width: 70%
+
+.user-avatar
+  @extend .me-2
+  @extend .rounded-circle
+  @extend .fs-4
+  @extend .fw-bold
+  @extend .text-center
+  width: 2.5rem
+  height: 2.5rem
+  line-height: 2.5rem
+  background: radial-gradient(circle, rgb(75, 65, 150), rgba(65, 126, 192, 0.2))
+  color: white
+
+.content
+  @extend .d-flex
+  @extend .flex-column
+  @extend .flex-fill
+  @extend .w-75
+  background-color: rgba(57, 55, 52, 0.85)
+
+.scroll
+  @extend .d-flex
+  @extend .justify-content-center
+  @extend .align-items-center
+  @extend .rounded-circle
+  left: 3%
+  bottom: 30px
+  z-index: 100
+  width: 60px
+  height: 60px
+  background-color: rgba(27, 13, 122, 0.66)
+  color: white
+  transition: opacity 0.5s ease-in-out, background-color 0.5s ease-in-out
+  cursor: pointer
+
+  &:hover
+    background-color: rgb(0, 12, 11)
+
+.scroll-footer
+  @extend .position-absolute
+  background-color: rgb(36, 32, 70, 0.9)
+
+.spinner-md
+  width: 3rem !important
+  height: 3rem !important
+
+.spinner-lg
+  width: 5rem !important
+  height: 5rem !important
+
+.footer
+  @extend .d-flex
+  @extend .justify-content-center
+  @extend .align-items-center
+  padding: 5rem
+  border-style: solid
+  border-width: 3px 0 0 0
+  border-image-source: linear-gradient(to right, rgba(255, 255, 255, 0), rgb(255, 255, 255) 50%, rgba(255, 255, 255, 0))
+  border-image-slice: 1
+  background-color: rgb(26, 26, 26)
+  color: white
